@@ -5,6 +5,9 @@ paths, five Docker networks with one container attached to two of them at once. 
 record re-derives every number from `docker inspect`, `ss -lntp` and the chain itself — nothing in
 it is asserted without a command that produces it.
 
+The code is written with AI: I set the goal, the data shapes and the acceptance criteria; the AI
+writes the implementation, and I verify by output rather than by reading every line.
+
 ### Three artifacts
 
 **[symbiqo-design](https://github.com/lim39869-create/symbiqo-design)** — design notes for a
@@ -24,7 +27,8 @@ an Android device fleet.
 
 Kubernetes. I run the same patterns by hand in Docker today — host networking, multi-homed
 containers, per-network subnets — and I would rather say that than claim a cluster I do not
-operate. Alongside it: Terraform, and a metrics stack with retention rather than a dashboard.
+operate. Alongside it: Terraform, a metrics stack with retention rather than a dashboard, and
+writing code without the assistance described above.
 
 ### Contact
 
