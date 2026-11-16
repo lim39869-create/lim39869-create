@@ -6,7 +6,10 @@ record re-derives every number from `docker inspect`, `ss -lntp` and the chain i
 it is asserted without a command that produces it.
 
 The code is written with AI: I set the goal, the data shapes and the acceptance criteria; the AI
-writes the implementation, and I verify by output rather than by reading every line.
+writes the implementation, and I verify by output rather than by reading every line. The harness is
+`opencode` with MCP servers and a few custom skills; the models are DeepSeek V4/V4.1 Flash and
+GLM-5.3/5.3 Flash, served through a gateway I wrote myself — so my own tool usage is metered by my
+own code. Roughly 158k lines of Go in thirteen months, starting from no programming background.
 
 ### Three artifacts
 
@@ -32,4 +35,5 @@ writing code without the assistance described above.
 
 ### Contact
 
-Open to remote roles in the UTC+4 to UTC+9 band. An issue on any repository above reaches me.
+Open to remote roles in the UTC+4 to UTC+9 band. `lim39869@gmail.com` — or an issue on any
+repository above.
